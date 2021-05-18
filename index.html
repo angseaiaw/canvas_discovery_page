@@ -1,22 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Select your user type to login to Canvas</title>
-    <link rel="stylesheet" href="buttons.css">
-    <link rel="stylesheet" href="discovery.css">
-  </head>
-  <body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Select your user type to login to Canvas</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="HandheldFriendly" content="true">
+  <link rel="stylesheet" href="buttons.css">
+  <link rel="stylesheet" href="discovery.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+<body>
   <div class="content">
     <div class="boxbox">
-        <img src="logo.png" />
-        <h3>Please select your user type:</h3>
-        <div class="buttonbox">
-            <p><a class="pure-button pure-button-primary" href="https://sim.test.instructure.com/login/saml/106">SIM Digital Learner</a></p>
-            <p><a class="pure-button pure-button-primary" href="https://sim.test.instructure.com/login/saml/107">SIM Teacher/Staff</a></p>
-            <p><a class="pure-button" href="https://sim.test.instructure.com/login/canvas">Login with Canvas</a></p>
-        </div>
+      <img src="logo.png" />
+      <h3>Please select your user type:</h3>
+      <div class="buttonbox">
+        <select id="studentSelection" onchange="redirectBySelection();" class="pure-button pure-button-primary">
+          <option value="">Corporate Student</option>
+          <option value="simStudent"> - SIM</option>
+        </select>
+        <p><a class="pure-button pure-button-primary" href="https://sim.test.instructure.com/login/saml/106">SIM Online Student</a></p>
+        <p><a class="pure-button pure-button-primary" href="https://sim.test.instructure.com/login/saml/107">Instructor / Admin</a></p>
+        <p><a class="pure-button" href="https://sim.test.instructure.com/login/canvas">Login with Canvas</a></p>
+      </div>
     </div>
   </div>
-  </body>
+  <script src="script.js"></script>
+</body>
+
 </html>
