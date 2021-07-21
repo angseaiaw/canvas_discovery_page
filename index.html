@@ -22,73 +22,61 @@
         <img class="me-3" src="img/logo.png" />
       </div>
       <div class="row g-4 p-4">
-        <div class="col-md-6 col-lg-5 p-3">
-          <h1>Welcome to SIM Online</h1>
-          <h5>Please select your user type on the right panel to login:</h5>
+        <div class="col-md-8 col-lg-8 p-3">
+          <h1 class="fw-bold lh-1 mb-3">Welcome to SIM Online</h1>
         </div>
-        <div class="col-md-6 col-lg-7 order-md-last boxbox">
+        <div class="col-md-4 col-lg-4 order-md-last boxbox">
           <div class="row p-3 text-center">
-            <div class="col-md-6">
-              <h3>LEARNER</h3>
-              <p>
-                <select id="studentSelection" onchange="redirectBySelection();" class="pure-button pure-button-primary">
-                  <option value="">Corporate</option>
-                  <option value="simStudent"> - SIM</option>
-                  <option value="simStudent"> - SIM</option>
-                  <option value="simStudent"> - SIM</option>
-                  <option value="simStudent"> - SIM</option>
-                  <option value="simStudent"> - SIM</option>
-                  <option value="simStudent"> - SIM</option>
-                  <option value="simStudent"> - SIM</option>
-                  <option value="simStudent"> - SIM</option>
-                  <option value="simStudent"> - SIM</option>
-                  <option value="simStudent"> - SIM</option>
-                  <option value="simStudent"> - SIM</option>
-                  <option value="simStudent"> - SIM</option>
-                  <option value="simStudent"> - SIM</option>
-                  <option value="simStudent"> - SIM</option>
-                  <option value="simStudent"> - SIM</option>
-                  <option value="simStudent"> - SIM</option>
-                  <option value="simStudent"> - SIM</option>
-                  <option value="simStudent"> - SIM</option>
-                  <option value="simStudent"> - SIM</option>
-                  <option value="simStudent"> - SIM</option>
-                  <option value="simStudent"> - SIM</option>
-                  <option value="simStudent"> - SIM</option>
-                </select>
-              </p>
-              <p>
+            <p>
+              <h4>Please select from the following options to login to your course:</h4>
+            </p>
+            <p>
+              <select id="studentSelection" onchange="redirectByStudentSelection();" class="pure-button pure-button-primary">
+                <option value="" default>-- Learner --</option>
+                <option value="simOnlineStudent">SIM Online</option>
+                <option value="simGEStudent">SIM Staff</option>
+                <option value="simGEStudent">SIMGE Student</option>
+              </select>
+            </p>
+            <!-- <p>
                 <a class="pure-button pure-button-primary" href="https://sim.test.instructure.com/login/saml/106">SIM
                   Online</a>
               </p>
               <p>
                 <a class="pure-button pure-button-primary" href="https://sim.test.instructure.com/login/saml/106">SIM
                   Global Education</a>
-              </p>
-            </div>
-            <div class="col-md-6">
-              <h3>INSTRUCTOR</h3>
+              </p> -->
+            <p>
+              <select id="instructorSelection" onchange=onchange="redirectByInstructorSelection();"
+                class="pure-button pure-button-primary">
+                <option value="" default>-- Instructor --</option>
+                <option value="trainer">Trainer</option>
+                <option value="associate">Associate</option>
+                <option value="faculty">Faculty</option>
+              </select>
+            </p>
+            <!--
               <p>
                 <a class="pure-button pure-button-primary" href="https://sim.test.instructure.com/login/canvas">Trainer</a>
               </p>
               <p><a class="pure-button pure-button-primary" href="https://sim.test.instructure.com/login/saml/106">Associates</a></p>
               <p><a class="pure-button pure-button-primary"
                   href="https://sim.test.instructure.com/login/saml/107">Faculty</a></p>
-            </div>
-            <div class="col-md-12">
-              <h3>OR</h3>
-              <p>
-                <a class="pure-button" href="https://sim.test.instructure.com/login/canvas">Login with Canvas</a>
-              </p>
-            </div>
+              -->
+            <p>
+              <h4>OR</h4>
+            </p>
+            <p>
+              <a class="pure-button" href="https://sim.test.instructure.com/login/canvas">Login with Canvas</a>
+            </p>
           </div>
         </div>
       </div>
     </div>
   </main>
-  <footer class="footer mt-auto py-3 bg-light">
+  <footer class="footer mt-auto py-3 text-center">
     <div class="container">
-      <span class="text-muted text-small">© Copyright 2021 Singapore Institute of Management Group Limited (SIM)</span>
+      <span class="text-small">© Copyright 2021 Singapore Institute of Management Group Limited (SIM)</span>
     </div>
   </footer>
   <script src="script.js"></script>
