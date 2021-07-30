@@ -10,7 +10,7 @@ function redirectByStudentSelection() {
         case "simGEStudent":
             window.location = "https://sim.test.instructure.com/login/saml/108";
             break;
-        case "others":
+        case "canvasStudent":
             window.location = "https://sim.test.instructure.com/login/canvas";
             break;
     } // end of switch
