@@ -23,19 +23,23 @@ div {
 .boxbox {
     border: 3px solid #999999;
     border-radius: 20px;
+    margin: 15px 30px;
     padding: 10px 40px;
     display: inline-block;
     background-color: white;
+    min-width: 250px;
 }
 
 .pure-button {
     border-radius: 5px;
-    min-width: 220px;
+    min-width: 200px;
+    margin: 3px 0;
 }
 
 .buttonbox {
     margin: auto;
-    width: 250px;
+    min-width: 250px;
+    padding: 5px;
 }
 
 /* Media Queries: Tablet Landscape */

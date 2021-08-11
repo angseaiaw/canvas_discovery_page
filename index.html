@@ -24,53 +24,42 @@
       <div class="row g-4 p-4">
         <div class="col-md-8 col-lg-8 p-3">
           <h1 class="fw-bold lh-1 mb-3">Welcome to SIM Online</h1>
-        </div>
-        <div class="col-md-4 col-lg-4 order-md-last boxbox">
-          <div class="row p-3 text-center">
+          <div class="col-md-7 p-3 text-center boxbox">
             <p>
               <h4>Please select from the following options to login to your course:</h4>
             </p>
+            <div class="buttonbox">
+              <p>
+                <select id="studentSelection" onchange="redirectByStudentSelection();" class="pure-button pure-button-primary">
+                  <option value="" default>-- Learner --</option>
+                  <option value="simOnlineStudent">SIM Online</option>
+                  <option value="simGEStudent">SIMGE Student</option>
+                  <option value="canvasStudent">Local Canvas</option>
+                </select>
+              </p>
+              <!-- <p>
+                  <a class="pure-button pure-button-primary" href="https://sim.test.instructure.com/login/saml/106">SIM
+                    Online</a>
+                </p>
+                <p>
+                  <a class="pure-button pure-button-primary" href="https://sim.test.instructure.com/login/saml/106">SIM
+                    Global Education</a>
+                </p> -->
+              <p>
+                <select id="instructorSelection" onchange=onchange="redirectByInstructorSelection();"
+                  class="pure-button pure-button-primary">
+                  <option value="" default>-- Instructor --</option>
+                  <option value="trainer">Trainer</option>
+                  <option value="associate">Associate</option>
+                </select>
+              </p>
+              <p>
+                <a class="pure-button" href="https://sim.test.instructure.com/login/saml/107">SIM Staff</a>
+              </p>
+            </div>
             <p>
-              <select id="studentSelection" onchange="redirectByStudentSelection();" class="pure-button pure-button-primary">
-                <option value="" default>-- Learner --</option>
-                <option value="simOnlineStudent">SIM Online ID</option>
-                <option value="simStaffStudent">SIM Staff ID</option>
-                <option value="simGEStudent">SIMGE Student ID</option>
-                <option value="canvasStudent">Canvas ID</option>
-              </select>
+              <a href="https://www.sim.edu.sg/Pages/Terms-of-Use.aspx" target="_">Terms of Use</a>
             </p>
-            <!-- <p>
-                <a class="pure-button pure-button-primary" href="https://sim.test.instructure.com/login/saml/106">SIM
-                  Online</a>
-              </p>
-              <p>
-                <a class="pure-button pure-button-primary" href="https://sim.test.instructure.com/login/saml/106">SIM
-                  Global Education</a>
-              </p> -->
-            <p>
-              <select id="instructorSelection" onchange=onchange="redirectByInstructorSelection();"
-                class="pure-button pure-button-primary">
-                <option value="" default>-- Instructor --</option>
-                <option value="trainer">Trainer ID</option>
-                <option value="associate">Associate ID</option>
-                <option value="faculty">Faculty ID</option>
-              </select>
-            </p>
-            <!--
-              <p>
-                <a class="pure-button pure-button-primary" href="https://sim.test.instructure.com/login/canvas">Trainer</a>
-              </p>
-              <p><a class="pure-button pure-button-primary" href="https://sim.test.instructure.com/login/saml/106">Associates</a></p>
-              <p><a class="pure-button pure-button-primary"
-                  href="https://sim.test.instructure.com/login/saml/107">Faculty</a></p>
-                
-              <p>
-                <h4>OR</h4>
-              </p>
-              <p>
-                <a class="pure-button" href="https://sim.test.instructure.com/login/canvas">Login with Canvas</a>
-              </p>
-            -->
           </div>
         </div>
       </div>
