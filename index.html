@@ -32,9 +32,9 @@
               <p>
                 <select id="studentSelection" onchange="redirectByStudentSelection();" class="pure-button pure-button-primary">
                   <option value="" default>-- Learner --</option>
-                  <option value="simOnlineStudent">SIM Online</option>
-                  <option value="simGEStudent">SIMGE Student</option>
-                  <option value="canvasStudent">Local Canvas</option>
+                  <option value="simOnlineStudent" data-bs-toggle="tooltip" data-bs-placement="right" title="Sign in with Azure B2C">SIM Online</option>
+                  <option value="simGEStudent" data-bs-toggle="tooltip" data-bs-placement="right" title="Sign in with @mymail.sim.edu.sg">SIMGE Student</option>
+                  <option value="canvasStudent" data-bs-toggle="tooltip" data-bs-placement="right" title="Sign in with Canvas account">Local Canvas</option>
                 </select>
               </p>
               <!-- <p>
@@ -49,8 +49,8 @@
                 <select id="instructorSelection" onchange=onchange="redirectByInstructorSelection();"
                   class="pure-button pure-button-primary">
                   <option value="" default>-- Instructor --</option>
-                  <option value="trainer">Trainer</option>
-                  <option value="associate">Associate</option>
+                  <option value="trainer" data-bs-toggle="tooltip" data-bs-placement="right" title="Sign in with Canvas account">Trainer</option>
+                  <option value="associate" data-bs-toggle="tooltip" data-bs-placement="right" title="Sign in with @mymail.sim.edu.sg account">Associate</option>
                 </select>
               </p>
               <p>
@@ -71,6 +71,7 @@
     </div>
   </footer>
   <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 
 </html>
