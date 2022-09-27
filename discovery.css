@@ -4,8 +4,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
-    background-color: rgba(255,255,255,0.45);
-    background-blend-mode: lighten;
+    background-color: rgba(255,255,255,0.25);
 }
 
 /* for debugging
@@ -21,25 +20,30 @@ div {
 }
 
 .boxbox {
-    border: 3px solid #999999;
-    border-radius: 20px;
-    margin: 15px 30px;
+    /* border: 1.5px solid #999999; */
+    border-radius: 10px;
+    margin: 15px 0px;
     padding: 10px 40px;
     display: inline-block;
-    background-color: white;
-    min-width: 250px;
+    background-color: rgba(255,255,255, 0.85);
+    min-width: 400px;
 }
 
 .pure-button {
     border-radius: 5px;
-    min-width: 200px;
+    min-width: 350px;
     margin: 3px 0;
 }
 
 .buttonbox {
     margin: auto;
-    min-width: 250px;
+    min-width: 280px;
     padding: 5px;
+}
+
+.text-mini {
+    font-size: 0.6em;
+    opacity: 0.4;
 }
 
 /* Media Queries: Tablet Landscape */
